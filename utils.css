@@ -5,6 +5,10 @@
  .bg {
      background-color: skyblue;
  }
+
+ .bg2 {
+    background-color: rgb(113, 126, 190);
+}
  
  .bg1{
     background-color: white;
