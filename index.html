@@ -11,11 +11,20 @@
     <body>
         <b><div class="PN">E-Waste Facility Locator</div></b>
         <hr>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Portfolio</a>
+            <a href="#contact">Services</a>
+            <a href="#contact">Contact</a>
+            <input type="text" placeholder="Search..">
+        </div>
+        
         <div class="container max">
             <header>
                 <nav class="flex justify-between">
                     <div class="flex items-center font-s"><img src="logo.jpeg" height="100" width="100"></div>
-                    <b><p class="clg">Prestige Institute of Engineering, Management & Research, Indore</p></b>
+                    <b><h1 class="clg">Prestige Institute of Engineering, Management & Research, Indore</h1></b>
                 </nav>
                 <hr>
             </header>
@@ -29,13 +38,54 @@
                             <p>With a Google Maps API, we can display interactive maps and customize them which will make it easier for you to locate nearest E-waste center on our website.</p>
                         </div>
                         <div class="tright">
-                            <img src="img3.jpeg" height="345" width="550">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1LeeDdjyMLHa0mRJCBVmwaXFdMaE-6QY&ehbc=2E312F" width="640" height="480"></iframe>    
+                        </div>
+                    </div>
+                </section><br>
+                <hr><br>
+                
+                <section class="sec1 bg2">
+                    <div class="flex items-center">
+                        <div class="tleft flex items-center flex-col justify-center px-2">
+                            <h1 class="heads">Price Estimation</h1>
+                            <h1 class="my-1">Select your device and purchase date to get estimated prices:</h1>
+                            <!-- Device Model Dropdown -->
+                            <label for="device">Select Device :</label>
+                            <select id="device">
+                                <option value="Phone">Phone</option>
+                                <option value="Laptop">Laptop</option>
+                                <!-- Add more device models as needed -->
+                            </select>
+                            <br>
+                            <label for="deviceModel">Select Device Model:</label>
+                            <select id="deviceModel">
+                                <option value="Realme">Realme</option>
+                                <option value="Samsung">Samsung</option>
+                                <option value="Google">Google</option>
+                                <option value="Lenovo">Lenovo</option>
+                                <!-- Add more device models as needed -->
+                            </select>
+                            <br>
+                            <!-- Date of Purchase Input -->
+                            <label for="purchaseDate">Date of Purchase:</label>
+                            <input type="date" id="purchaseDate">
+                            <br>
+                            <!-- Button to Calculate Estimated Price -->
+                            <button onclick="calculateEstimatedPrice()">Calculate Estimated Price</button>
+                            
+                            <!-- Display Estimated Price -->
+                            <p id="estimatedPrice"></p>
+                        </div>
+                        <div class="tleft flex items-center flex-col justify-center px-2">
+                            <h1 class="heads">Search Bar</h1>
+                            <h1 class="my-1">A search bar that offers dos and don'ts of decomposition as results!</h1>
+                            <p>The search bar processes the user's input of product details and displays a list of dos and don'ts of the product decomposition making it easier for users to make informed decisions and choices.</p>
                         </div>
                     </div>
                 </section><br>
                 <hr><br>
 
-                <section class="sec1 bg1">
+                <!-- <section class="sec1 bg1">
                     <div class="flex items-center">
                         <div class="tright">
                             <img src="img6.jpg" height="345" width="550">
@@ -47,9 +97,9 @@
                         </div>
                     </div>
                 </section><br>
-                <hr><br>
+                <hr><br> -->
 
-                <section class="sec1 bg">
+                <section class="sec1 bg1">
                     <div class="flex items-center">
                         <div class="tleft flex items-center flex-col justify-center px-2">
                             <h1 class="heads">Pop-Ups</h1>
@@ -63,7 +113,22 @@
                 </section><br>
                 <hr>
             </main>
-            <footer>Copyright &copy; PIEMR.Edu.in | All rights reserved 2023.</footer>
+            <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <!-- <div class="footer-logo">
+                            <img src="logo.jpeg" alt="Footer Logo">
+                        </div> -->
+                        <div class="footer-text">
+                            <p>SIH Guide: Dr. Aradhana Negi</p>
+                            <p>SIH Team Name: Eco Gems</p>
+                            <p>&copy; 2023 Prestige Institute of Engineering, Management & Research, Indore</p>
+                            <p>Copyright &copy; PIEMR.Edu.in | All rights reserved 2023.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+                        
         </div>
     </body>
 </html>
